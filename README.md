@@ -1,10 +1,20 @@
 # Decode Labs Internship Tasks
 
-This repository contains the tasks completed as part of the **Decode Labs Internship Program**. The objective of these tasks is to strengthen practical skills in frontend development, full-stack application development, database integration, and modern software engineering practices.
+This repository contains the projects completed as part of the **Decode Labs Internship Program**. The tasks focus on frontend development, backend API development, database integration, and full-stack application development using modern web technologies.
 
 ---
 
-## Repository Structure
+# Completed Tasks
+
+✅ Task 1 – Responsive Portfolio Website
+
+✅ Task 2 – Backend API Development
+
+✅ Task 3 – Database Integration & Full-Stack Inventory Management System
+
+---
+
+# Repository Structure
 
 ```text
 Decode_labs/
@@ -12,36 +22,51 @@ Decode_labs/
 ├── README.md
 │
 ├── Task_1/
+│   ├── README.md
 │   ├── index.html
 │   ├── style.css
 │   ├── script.js
-│   ├── resume.pdf
-│   └── README.md
+│   └── resume.pdf
 │
 ├── Task_2/
-│   ├── backend/
-│   ├── frontend/
-│   └── README.md
+│   ├── db.js
+│   ├── server.js
+│   ├── package.json
+│   └── package-lock.json
+│
+└── Task_3/
+    ├── backend/
+    │   ├── db.js
+    │   ├── server.js
+    │   ├── package.json
+    │   └── package-lock.json
+    │
+    └── frontend/
+        ├── public/
+        ├── src/
+        ├── package.json
+        └── README.md
 ```
+
+---
 
 # Task 1 – Responsive Portfolio Website
 
 ## Objective
 
-Design and develop a responsive portfolio website using HTML, CSS, and JavaScript while following modern web development and accessibility standards.
+Design and develop a responsive personal portfolio website using HTML, CSS, and JavaScript while following accessibility standards and modern web design principles.
 
 ## Features
 
 - Responsive Design
 - Mobile Navigation Menu
-- Semantic HTML5 Structure
-- Accessibility-Friendly Components
 - Smooth Scroll Navigation
 - Scroll Reveal Animations
-- Learning Progress Indicators
-- Contact Form Validation
+- Skills Showcase
 - Education Timeline
-- Interactive Project Showcase
+- Featured Projects Section
+- Contact Form Validation
+- Accessibility-Friendly Design
 
 ## Technologies Used
 
@@ -51,41 +76,16 @@ Design and develop a responsive portfolio website using HTML, CSS, and JavaScrip
 - CSS3
 - JavaScript (ES6)
 
-### Concepts Applied
+## Concepts Applied
 
+- Semantic HTML
 - CSS Grid
 - Flexbox
 - Media Queries
 - DOM Manipulation
 - Form Validation
-- Intersection Observer API
-- Responsive Design Principles
+- Responsive Design
 - Accessibility Best Practices
-
-## Sections Included
-
-- Hero Section
-- About Me
-- Skills
-- Featured Projects
-- Learning Roadmap
-- Beyond Coding
-- Education Timeline
-- Contact Section
-
-## Featured Projects
-
-### Bookstagram
-
-AI-powered book recommendation platform utilizing semantic search and transformer embeddings.
-
-### Medicure
-
-Full-stack healthcare platform built using the MERN stack.
-
-### Inventory Management System
-
-Database-driven inventory and stock management application.
 
 ## Learning Outcomes
 
@@ -98,44 +98,93 @@ Database-driven inventory and stock management application.
 
 ---
 
-# Task 2 – Grocery Inventory Management System
+# Task 2 – Backend API Development
 
 ## Objective
 
-Develop a full-stack inventory management application that demonstrates CRUD operations, database integration, REST API development, and frontend-backend communication.
+Develop a backend REST API using Node.js and Express.js to handle application logic, process requests, validate data, and provide structured responses.
+
+## Features
+
+- RESTful API Architecture
+- GET and POST Endpoints
+- Request Handling
+- Input Validation
+- JSON Responses
+- Express Routing
+- Server-Side Logic
+
+## Technologies Used
+
+- Node.js
+- Express.js
+
+## API Endpoints
+
+| Method | Endpoint | Description |
+|----------|----------|-------------|
+| GET | /products | Retrieve all products |
+| POST | /products | Add a new product |
+| PUT | /products/:id | Update a product |
+| DELETE | /products/:id | Delete a product |
+
+## Concepts Applied
+
+- Backend Development
+- REST API Design
+- Routing
+- Request & Response Handling
+- Middleware Usage
+- Data Validation
+- Server-Side Architecture
+
+## Learning Outcomes
+
+- Building backend services
+- Designing REST APIs
+- Handling client requests
+- Implementing validation logic
+- Structuring server-side applications
+
+---
+
+# Task 3 – Database Integration & Inventory Management System
+
+## Objective
+
+Develop a full-stack inventory management system integrated with a relational database to perform CRUD operations and manage product inventory efficiently.
 
 ## Project Overview
 
-The Grocery Inventory Management System is a full-stack web application designed to manage products, suppliers, and inventory levels efficiently through a modern and user-friendly interface.
+The Grocery Inventory Management System is a full-stack web application that allows users to manage products, suppliers, and stock levels through a modern and responsive interface.
 
 ## Features
 
 ### Product Management
 
-- Add new products
-- View all products
-- Update product details
-- Delete products
+- Add Products
+- View Products
+- Update Products
+- Delete Products
 
 ### Supplier Management
 
-- Supplier integration
-- Product-supplier relationships
+- Supplier Integration
+- Product-Supplier Relationships
 
 ### Inventory Tracking
 
-- Real-time stock monitoring
-- Color-coded stock indicators
-  - Low Stock (< 5)
-  - Medium Stock (< 15)
-  - High Stock (15+)
+- Real-Time Stock Monitoring
+- Low Stock Indicators
+- Medium Stock Indicators
+- High Stock Indicators
 
 ### User Interface
 
 - Responsive Design
 - Interactive Tables
-- Modern Layout
-- Smooth User Experience
+- Dynamic Data Rendering
+- Clean and Modern Dashboard
 
 ## Technologies Used
 
@@ -154,15 +203,24 @@ The Grocery Inventory Management System is a full-stack web application designed
 
 - MySQL
 
-## Concepts Applied
+## Database Schema
 
-- REST API Development
-- CRUD Operations
-- Client-Server Architecture
-- Database Connectivity
-- State Management
-- Component-Based Design
-- Responsive UI Development
+### Products Table
+
+| Field | Type |
+|---------|---------|
+| id | INT (Primary Key) |
+| name | VARCHAR |
+| quantity | INT |
+| supplier_id | INT |
+
+### Suppliers Table
+
+| Field | Type |
+|---------|---------|
+| id | INT (Primary Key) |
+| name | VARCHAR |
+| contact | VARCHAR |
 
 ## API Endpoints
 
@@ -171,24 +229,33 @@ The Grocery Inventory Management System is a full-stack web application designed
 | GET | /products | Retrieve all products |
 | GET | /suppliers | Retrieve all suppliers |
 | POST | /products | Add a new product |
-| PUT | /products/:id | Update product details |
+| PUT | /products/:id | Update a product |
 | DELETE | /products/:id | Delete a product |
+
+## Concepts Applied
+
+- Full-Stack Development
+- Database Integration
+- CRUD Operations
+- REST APIs
+- Client-Server Architecture
+- React State Management
+- Relational Database Design
 
 ## Learning Outcomes
 
 - Building full-stack applications
-- Designing RESTful APIs
 - Connecting React with backend services
 - Integrating MySQL databases
 - Implementing CRUD functionality
-- Managing project dependencies
-- Using Git and GitHub in collaborative workflows
+- Managing application data
+- Developing scalable project structures
 
 ---
 
 # Skills Demonstrated
 
-### Frontend Development
+## Frontend Development
 
 - HTML5
 - CSS3
@@ -196,19 +263,19 @@ The Grocery Inventory Management System is a full-stack web application designed
 - React.js
 - Responsive Design
 
-### Backend Development
+## Backend Development
 
 - Node.js
 - Express.js
 - REST APIs
 
-### Database Management
+## Database Management
 
 - MySQL
-- Database Design
 - CRUD Operations
+- Relational Database Design
 
-### Development Tools
+## Development Tools
 
 - Git
 - GitHub
@@ -217,9 +284,65 @@ The Grocery Inventory Management System is a full-stack web application designed
 
 ---
 
+# Getting Started
+
+## Clone the Repository
+
+```bash
+git clone https://github.com/keerthanavoffl/Decode_labs.git
+```
+
+```bash
+cd Decode_labs
+```
+
+---
+
+## Run Task 1
+
+Open:
+
+```text
+Task_1/index.html
+```
+
+in your browser.
+
+---
+
+## Run Task 2
+
+```bash
+cd Task_2
+npm install
+npm start
+```
+
+---
+
+## Run Task 3
+
+### Backend
+
+```bash
+cd Task_3/backend
+npm install
+npm start
+```
+
+### Frontend
+
+```bash
+cd Task_3/frontend
+npm install
+npm start
+```
+
+---
+
 # Author
 
-## Keerthana V
+**Keerthana V**
 
 Computer Science Engineering Student
 
@@ -231,7 +354,6 @@ LeetCode: https://leetcode.com/u/kit28csea077/
 
 ---
 
-
 # License
 
-This repository is maintained for educational and internship purposes.
+This repository is maintained for educational, learning, and internship purposes.
