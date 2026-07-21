@@ -1,82 +1,49 @@
-# Responsive Portfolio Website
+# Decode Labs Internship Tasks
 
-A modern, responsive portfolio website built using HTML5, CSS3, and JavaScript.
-
-## Overview
-
-This project showcases my journey as a Computer Science student, highlighting my technical skills, projects, learning roadmap, education, and contact information through a clean and interactive user interface.
-
-The website follows modern frontend development practices, including semantic HTML, responsive layouts, accessibility features, and JavaScript-based interactivity.
+This repository contains the tasks completed as part of the Decode Labs Internship Program.
 
 ---
+
+## Repository Structure
+
+```text
+Decode_labs/
+│
+├── README.md
+│
+├── Task_1/
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+│   └── resume.pdf
+│
+├── Task_2/
+│
+├── Task_3/
+│
+└── Task_4/
+```
+
+---
+
+# Task 1 – Responsive Portfolio Website
+
+## Objective
+
+Design and develop a responsive frontend portfolio website using HTML, CSS, and JavaScript while following modern web development practices.
 
 ## Features
 
-### Responsive Design
-- Mobile-first approach
-- Optimized for mobile, tablet, and desktop devices
-- CSS Grid and Flexbox layouts
-
-### Modern User Interface
-- Glassmorphism-inspired cards
-- Smooth animations and transitions
-- Interactive hero section
-- Timeline-based education section
-
-### Accessibility
-- Semantic HTML5 structure
-- Skip navigation link
-- Keyboard-friendly navigation
-- ARIA attributes for improved accessibility
-
-### JavaScript Interactivity
-- Responsive mobile navigation menu
-- Scroll reveal animations using Intersection Observer
-- Active navigation highlighting
-- Animated learning progress bars
-- Contact form validation
-
----
-
-## Sections
-
-### Hero
-Introduction and quick overview.
-
-### My Story
-A brief description of my journey into software development.
-
-### Skills
-Categorized technical skills including:
-- Frontend Development
-- Backend Development
-- Databases
-- Programming Languages
-
-### Projects
-
-#### Bookstagram
-AI-powered book recommendation platform using semantic search and transformer embeddings.
-
-#### Medicure
-Full-stack healthcare platform built with the MERN stack.
-
-#### Inventory Management System
-Database-driven inventory tracking and management application.
-
-### Learning Roadmap
-Current technologies and concepts being explored.
-
-### Beyond Coding
-Personal interests and activities related to continuous learning.
-
-### Education Timeline
-Academic journey presented in a timeline format.
-
-### Contact
-Contact information, social links, and contact form.
-
----
+- Responsive Design
+- Mobile Navigation Menu
+- Semantic HTML5 Structure
+- Accessibility-Friendly Components
+- Smooth Scroll Navigation
+- Scroll Reveal Animations
+- Learning Progress Indicators
+- Contact Form Validation
+- Education Timeline
+- Interactive Project Showcase
 
 ## Technologies Used
 
@@ -85,27 +52,75 @@ Contact information, social links, and contact form.
 - CSS3
 - JavaScript (ES6)
 
-### Design
+### Concepts Applied
 - CSS Grid
 - Flexbox
-- Custom Animations
-- Responsive Media Queries
-
-### APIs & Browser Features
-- Intersection Observer API
+- Media Queries
 - DOM Manipulation
 - Form Validation
+- Intersection Observer API
+- Responsive Design Principles
+- Accessibility Best Practices
+
+## Sections Included
+
+- Hero Section
+- About Me
+- Skills
+- Featured Projects
+- Learning Roadmap
+- Beyond Coding
+- Education Timeline
+- Contact Section
+
+## Projects Highlighted
+
+### Bookstagram
+AI-powered book recommendation platform using semantic search and transformer embeddings.
+
+### Medicure
+Full-stack healthcare platform developed using the MERN stack.
+
+### Inventory Management System
+Database-driven inventory and stock management application.
 
 ---
 
-## Project Structure
+## Learning Outcomes
 
-```text
-portfolio/
-│
-├── index.html
-├── style.css
-├── script.js
-├── resume.pdf
-│
-└── assets/
+Through this task, I gained practical experience in:
+
+- Building responsive user interfaces
+- Writing semantic HTML
+- Creating modern CSS layouts
+- Implementing JavaScript interactivity
+- Improving accessibility
+- Managing projects using Git and GitHub
+
+---
+
+## Author
+
+**Keerthana V**
+
+Computer Science Engineering Student
+
+GitHub: https://github.com/keerthanavoffl
+
+LinkedIn: https://www.linkedin.com/in/keerthanav1503/
+
+LeetCode: https://leetcode.com/u/kit28csea077/
+
+---
+
+## Future Tasks
+
+- Task 2 – Coming Soon
+- Task 3 – Coming Soon
+- Task 4 – Coming Soon
+
+---
+
+## License
+
+This repository is maintained for educational and internship purposes.
